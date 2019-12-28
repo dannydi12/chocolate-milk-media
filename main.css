@@ -180,6 +180,7 @@ main {
   /* width: 40%; */
   min-width: 300px;
   height: fit-content;
+  transform-style: preserve-3d
 }
 
 .bio a {
@@ -200,6 +201,10 @@ main {
   display: block;
   border-radius: 100%;
 } */
+
+.profile-pic {
+  transform: translateZ(60px);
+}
 
 .profile-links {
   width: 100%;
