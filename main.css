@@ -62,6 +62,13 @@ button:hover {
   background-color: pink;
 }
 
+::selection {
+  background: #9F6D52; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #9F6D52; /* Gecko Browsers */
+}
+
 /* Main */
 
 main {
