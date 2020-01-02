@@ -27,6 +27,7 @@ function draw() {
     left: ${Math.floor(Math.random() * (100 - 0)) + 0}vw;
     color: white;
     width: ${Math.floor(Math.random() * (5 - 1)) + 1}vmax;
+    z-index: -10;
     animation: ${Math.random() >= 0.5 ? `chill` : `move`} ${Math.floor(Math.random() * (100 - 30)) + 30}s ease-in-out infinite;
     transform-origin: 50% 50%;">
     ${shape} 
