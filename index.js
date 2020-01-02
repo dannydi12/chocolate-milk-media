@@ -45,10 +45,11 @@ function initReveal() {
   sr.reveal('.bio, .reel, .faq, .cam-picture', { duration: 3000 })
 }
 
-function initLazyLoad() {
-  window.addEventListener("load", function(event) {
-    lazyload();
-});
+function initTilt() {
+  const url = 'https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js';
+  if($(window).width() >= 1000){
+    $.getScript(url);
+  }
 }
 
 function handleContactButton() {
@@ -61,8 +62,8 @@ function handleContactButton() {
 
 function main() {
   draw();
-  // initLazyLoad();
   initReveal();
+  initTilt();
   handleContactButton();
 }
 
