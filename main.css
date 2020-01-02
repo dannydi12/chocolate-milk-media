@@ -159,6 +159,11 @@ main {
   border: none;
 }
 
+.reel {
+  width: 100% !important;
+  height: auto !important;
+}
+
 .reel:focus {
   outline: none !important;
 }

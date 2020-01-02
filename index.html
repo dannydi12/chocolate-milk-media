@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./main.css">
   <link href="https://fonts.googleapis.com/css?family=Calistoga|Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./animations.css">
-  <link rel="stylesheet" href="./video-js.css">
   <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicons//favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicons//favicon-16x16.png">
@@ -56,17 +55,11 @@
           <h2>Our Reel</h2>
         </header>
         <p>Get a taste of our most recent productions. Straws not included.</p>
-        <video class="video-js reel" controls preload="auto"
-          data-setup='{}'>
-          <source src="./videos/camera.webm" type="video/webm">
-          </source>
-          <p class="vjs-no-js">
-            To view this video please enable JavaScript, and consider upgrading to a
-            web browser that
-            <a href="https://videojs.com/html5-video-support/" target="_blank">
-              supports HTML5 video
-            </a>
-          </p>
+        <video class="reel" controls preload="auto" poster="./images/sam.JPG">
+          <source src="./videos/camera.webm" type="video/webm"></source>
+          <source src="./videos/camera.mp4" type="video/mp4"></source>
+          <!-- Remove below once in production -->
+          <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"></source>
         </video>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" class="middle-wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -282,7 +275,6 @@
     <p>Made with a lot of &#127851;&#129371;</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./video.js"></script>
   <script src="./scrollreveal.min.js"></script>
   <script src="./lazysizes.min.js"></script>
   <script src="./index.js"></script>
