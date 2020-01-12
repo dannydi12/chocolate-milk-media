@@ -152,6 +152,28 @@ main {
   margin-bottom: 50px;
 }
 
+.chocolate-list {
+  list-style: none;
+}
+
+.chocolate-list > li:nth-child(even)::before {
+  content: '';
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+  background-image: url('./images/drop-pink.svg');
+}
+
+.chocolate-list > li:nth-child(odd)::before {
+  content: '';
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+  background-image: url('./images/drop-brown.svg');
+}
+
 /* Reel */
 
 .reel, .bio, .cam-picture {
