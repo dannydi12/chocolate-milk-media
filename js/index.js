@@ -26,10 +26,10 @@ function draw() {
 
     blobs += `
     <div style="position: absolute;
-    top: ${Math.floor(Math.random() * (100 - 0)) + 5}vh;
+    top: ${Math.floor(Math.random() * (100 - 0)) + 0}vh;
     left: ${Math.floor(Math.random() * ((chillOrNot ? 90 : 40) - 0)) + 0}vw;
     color: white;
-    width: ${Math.floor(Math.random() * (5 - 1)) + 1}vmax;
+    width: ${Math.floor(Math.random() * (7 - 1)) + 1}vmax;
     z-index: -10;
     animation: ${chillOrNot ? `chill` : `move`} ${Math.floor(Math.random() * (100 - 30)) + 30}s ease-in-out infinite;
     transform-origin: 50% 50%;">
