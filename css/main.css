@@ -162,7 +162,7 @@ main {
   height: 15px;
   width: 15px;
   margin-right: 15px;
-  background-image: url('./images/drop-pink.svg');
+  background-image: url('../images/drop-pink.svg');
 }
 
 .chocolate-list > li:nth-child(odd)::before {
@@ -171,7 +171,7 @@ main {
   height: 15px;
   width: 15px;
   margin-right: 15px;
-  background-image: url('./images/drop-brown.svg');
+  background-image: url('../images/drop-brown.svg');
 }
 
 /* Reel */
