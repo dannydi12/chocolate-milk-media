@@ -230,6 +230,10 @@ main {
   transform: translateZ(60px);
 }
 
+/* .bio h3, p {
+  transform: translateZ(60px);
+} */
+
 .profile-links {
   width: 100%;
   display: flex;
