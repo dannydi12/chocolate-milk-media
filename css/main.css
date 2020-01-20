@@ -145,6 +145,11 @@ main {
   background-color: pink;
 }
 
+.scroll-down {
+  margin-top: 150px;
+  display: none;
+}
+
 /* What We Do */
 
 .cam-picture {
