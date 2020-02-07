@@ -13,8 +13,8 @@ function draw() {
       <g transform="translate(300,300)">
         <path d="M145.3,-120.2C181.7,-70.3,200.1,-10.2,188.4,43.8C176.7,97.8,135,145.8,82.5,170.8C30.1,195.8,-33.1,197.9,-73.9,171.4C-114.6,144.8,-132.8,89.7,-155.8,25.3C-178.7,-39.1,-206.2,-112.8,-181,-160.2C-155.8,-207.6,-77.9,-228.8,-11.7,-219.5C54.5,-210.1,108.9,-170.2,145.3,-120.2Z" fill="#FFB4BC" />
       </g>
-    </svg>` : shape = 
-    `<svg 
+    </svg>` : shape =
+      `<svg 
     xmlns:xlink="http://www.w3.org/1999/xlink" 
     version="1.1" xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 310 350">
@@ -47,7 +47,7 @@ function initReveal() {
 
 function initTilt() {
   const url = 'https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js';
-  if($(window).width() >= 1000){
+  if ($(window).width() >= 1000) {
     $.getScript(url);
   }
 }
@@ -56,7 +56,18 @@ function handleContactButton() {
   $('.js-hero-button').click(e => {
     $('html, body').animate({
       scrollTop: ($('.contact-section').first().offset().top)
-  },5000);
+    }, 5000);
+  });
+}
+
+function lazySVG() {
+  $(document).on('lazybeforeunveil', (e) => {
+    if (e.target.tagName == 'svg') {
+      const imageEl = $(e.target).find('image');
+      if (imageEl) {
+        imageEl.attr('xlink:href', $(e.target).data('image-url'))
+      }
+    }
   });
 }
 
@@ -65,6 +76,7 @@ function main() {
   initReveal();
   initTilt();
   handleContactButton();
+  lazySVG();
 }
 
 $(main);
