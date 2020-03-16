@@ -191,6 +191,7 @@ main {
 .reel {
   /* width: 100% !important;
   height: auto !important; */
+  box-shadow: none;
   margin-left: auto !important;
   margin-right: auto !important;
   display: block !important;
