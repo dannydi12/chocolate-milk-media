@@ -189,8 +189,11 @@ main {
 }
 
 .reel {
-  width: 100% !important;
-  height: auto !important;
+  /* width: 100% !important;
+  height: auto !important; */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
 }
 
 .reel:focus {
