@@ -22,7 +22,7 @@ h1 {
   font-family: 'Calistoga', 'cursive';
   font-size: 8vw;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 0px rgb(223, 163, 223), 2px 2px 0px rgb(223, 163, 223), 3px 3px 0px rgb(223, 163, 223), 4px 4px 0px rgb(223, 163, 223);
+  text-shadow: 1px 1px  rgb(223, 163, 223), 2px 2px 0 rgb(223, 163, 223), 3px 3px 0 rgb(223, 163, 223), 4px 4px 0 rgb(223, 163, 223);
 }
 
 h2 {
@@ -37,7 +37,6 @@ h3 {
   font-family: 'Calistoga', 'cursive';
   font-size: 28px;
   margin: 0;
-  /* margin-top: 10px; */
   margin-bottom: 20px;
   letter-spacing: 1px;
   font-weight: 100;
@@ -69,12 +68,10 @@ button:hover {
 
 ::selection {
   background: #9F6D52;
-  /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
   background: #9F6D52;
-  /* Gecko Browsers */
 }
 
 /* Main */
@@ -111,10 +108,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: calc(50vh); */
-  /* margin-top: calc(30vh); */
   position: absolute;
-  /* z-index: -1; */
   height: 100%;
   width: 100%;
   max-width: 100%;
@@ -123,11 +117,7 @@ main {
 .icon {
   margin-top: calc(20vh);
   height: 15vw;
-  text-shadow: 1px 1px 0px rgb(223, 163, 223), 2px 2px 0px rgb(223, 163, 223), 3px 3px 0px rgb(223, 163, 223), 4px 4px 0px rgb(223, 163, 223);
-}
-
-.tagline {
-  /* font-size: 30px; */
+  text-shadow: 1px 1px 0 rgb(223, 163, 223), 2px 2px 0 rgb(223, 163, 223), 3px 3px 0 rgb(223, 163, 223), 4px 4px 0 rgb(223, 163, 223);
 }
 
 .hero-button {
@@ -189,8 +179,6 @@ main {
 }
 
 .reel {
-  /* width: 100% !important;
-  height: auto !important; */
   box-shadow: none;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -209,7 +197,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 0px;
+  margin-top: ;
 }
 
 .bio {
@@ -238,10 +226,6 @@ main {
 .profile-pic {
   transform: translateZ(60px);
 }
-
-/* .bio h3, p {
-  transform: translateZ(60px);
-} */
 
 .profile-links {
   width: 100%;
